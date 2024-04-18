@@ -1,5 +1,28 @@
+<!DOCTYPE html>
 <html>
-  <body>hello</body>
-  <script>
-  </script>
+<head>
+<meta charset="utf-8">
+<title>Test</title>
+</head>
+<script>
+  var getDeviceId = function(){
+      var did = RiskStubAPI.getDeviceId();
+      console.log(did);
+      alert(did);
+  }
+
+  var getStartId = function(){
+      var startId = RiskStubAPI.getStartId();
+      console.log(startId)
+      alert(startId);
+    
+  }
+</script>
+<body>
+  <div>
+    <button onclick="getDeviceId()">获取设备ID</button>
+    <p/>
+    <button onclick="getStartId()">获取StartId</button>
+  </div>
+</body>
 </html>
